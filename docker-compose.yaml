@@ -23,6 +23,7 @@ services:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
       - 'WEBUI_NAME=PrimeAI'
+      - 'NODE_OPTIONS=--max-old-space-size=4096'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
